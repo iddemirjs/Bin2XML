@@ -1,11 +1,30 @@
 # Bin2XML
 
-You are asked to develop a command line tool to convert a binary file to
-XML format. All coding must be in C programming language. 
+Developed a command line tool to convert a binary file to
+XML format. Program was made in C programming language. 
+You can give a sample binary file (“records.dat”) to test your program. This file consists of
+some information about the employees of a company. Each record has the following
+attributes and their sizes are given below: 
 
-# Requirements
+# Record Structures
 
-* GNU Compiler Collection (gcc)
+```
+struct record {
+ char name[64]; 
+ char surname[32]; 
+ char gender;
+ char email[32];
+ char phone_number[16];
+ char address[32];
+ char level_of_education[8];
+ unsigned int income_level; 
+ unsigned int expenditure; 
+ char currency_unit[16];
+ char currentMood[32];
+ float height;
+ unsigned int weight;
+};
+```
 
 # Example One Record Outputs
 
@@ -29,6 +48,10 @@ XML format. All coding must be in C programming language.
     ...
 </records>
 ```
+
+# Requirements
+
+* GNU Compiler Collection (gcc)
 
 ## installation
 ```
